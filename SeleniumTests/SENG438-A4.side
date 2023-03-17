@@ -1,0 +1,827 @@
+{
+  "id": "293b9e88-40fb-43c4-9aad-c3a5f63e2a70",
+  "version": "2.0",
+  "name": "SENG438-A4",
+  "url": "https://amazon.ca/",
+  "tests": [{
+    "id": "6a8f744b-69c4-401b-ad84-1da6fb6e4e85",
+    "name": "GoHome",
+    "commands": [{
+      "id": "84538f15-954a-4d2b-bc02-6d343c72140b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f54cc153-90c1-4587-af92-7ce741c518ff",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=nav-logo-sprites",
+      "targets": [
+        ["id=nav-logo-sprites", "id"],
+        ["linkText=.ca", "linkText"],
+        ["css=#nav-logo-sprites", "css:finder"],
+        ["xpath=//a[@id='nav-logo-sprites']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-logo']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ref=nav_logo')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'.ca')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eee7519f-e6f6-4ba3-a324-ebef603d1a9f",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Amazon.ca: Low Prices – Fast Shipping – Millions of Items",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "165a494b-f59c-44b5-b04d-e925e5ea65d7",
+    "name": "AddToCart",
+    "commands": [{
+      "id": "17ab3dd0-8150-4601-b6a7-f7c87b1d601a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4439e69-9fb9-4e22-b0c2-96dc990adc2b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Best Sellers",
+      "targets": [
+        ["linkText=Best Sellers", "linkText"],
+        ["css=#nav-xshop > .nav-a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Best Sellers')]", "xpath:link"],
+        ["xpath=//div[@id='nav-xshop']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Best-Sellers-generic/zgbs/?ref_=nav_cs_bestsellers')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Best Sellers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56aa7c52-a5e1-45ea-b7d6-85f6d6cbc485",
+      "comment": "",
+      "command": "click",
+      "target": "css=#B08BRV6S41 .p13n-sc-truncate-desktop-type2",
+      "targets": [
+        ["css=#B08BRV6S41 .p13n-sc-truncate-desktop-type2", "css:finder"],
+        ["xpath=//div[@id='B08BRV6S41']/a[2]/span/div", "xpath:idRelative"],
+        ["xpath=//a[2]/span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7796fdd7-47f4-4440-8b57-88dfc98af641",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=#add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0eb275e-2799-4ffe-b817-f58785c9e979",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Go to cart",
+      "targets": [
+        ["linkText=Go to cart", "linkText"],
+        ["css=#sw-gtc .a-button-text", "css:finder"],
+        ["xpath=(//a[contains(text(),'Go to cart')])[2]", "xpath:link"],
+        ["xpath=//span[@id='sw-gtc']/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/cart/view.html?ref_=sw_gtc')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/span/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f46ebd1-8467-4774-900d-01e49eeb3fdc",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=sc-subtotal-label-buybox",
+      "targets": [],
+      "value": "Subtotal (1 item):"
+    }]
+  }, {
+    "id": "c8e8bbd7-962f-4227-9123-36c948997eb1",
+    "name": "ChangeDeliveryLocation",
+    "commands": [{
+      "id": "c4166115-bd9e-46de-9f02-980b3f1c558b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25192902-a559-43e2-95d7-e99ac158bc78",
+      "comment": "",
+      "command": "click",
+      "target": "id=glow-ingress-line2",
+      "targets": [
+        ["id=glow-ingress-line2", "id"],
+        ["css=#glow-ingress-line2", "css:finder"],
+        ["xpath=//span[@id='glow-ingress-line2']", "xpath:attributes"],
+        ["xpath=//div[@id='glow-ingress-block']/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68fd599c-830c-4390-b244-e918832a6c69",
+      "comment": "",
+      "command": "click",
+      "target": "id=GLUXZipUpdateInput_0",
+      "targets": [
+        ["id=GLUXZipUpdateInput_0", "id"],
+        ["css=#GLUXZipUpdateInput_0", "css:finder"],
+        ["xpath=//input[@id='GLUXZipUpdateInput_0']", "xpath:attributes"],
+        ["xpath=//div[@id='GLUXZipInputSection']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c0c2729-4d15-4c37-86e0-f864933a0f9e",
+      "comment": "",
+      "command": "type",
+      "target": "id=GLUXZipUpdateInput_0",
+      "targets": [
+        ["id=GLUXZipUpdateInput_0", "id"],
+        ["css=#GLUXZipUpdateInput_0", "css:finder"],
+        ["xpath=//input[@id='GLUXZipUpdateInput_0']", "xpath:attributes"],
+        ["xpath=//div[@id='GLUXZipInputSection']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "t2n"
+    }, {
+      "id": "bdc456aa-7bec-41a6-9043-af7527b8c39b",
+      "comment": "",
+      "command": "type",
+      "target": "id=GLUXZipUpdateInput_1",
+      "targets": [
+        ["id=GLUXZipUpdateInput_1", "id"],
+        ["css=#GLUXZipUpdateInput_1", "css:finder"],
+        ["xpath=//input[@id='GLUXZipUpdateInput_1']", "xpath:attributes"],
+        ["xpath=//div[@id='GLUXZipInputSection']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input[2]", "xpath:position"]
+      ],
+      "value": "1n4"
+    }, {
+      "id": "0deaf2bc-4a21-4c8c-9914-a7b04b8bc873",
+      "comment": "",
+      "command": "click",
+      "target": "css=#GLUXZipUpdate .a-button-input",
+      "targets": [
+        ["css=#GLUXZipUpdate .a-button-input", "css:finder"],
+        ["xpath=(//input[@type='submit'])[4]", "xpath:attributes"],
+        ["xpath=//span[@id='GLUXZipUpdate']/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40fd2efd-a3b4-4ba6-86b1-ee801b65384d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=glow-ingress-line2",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "d21fd10c-f910-4df7-a0b5-330e44085128",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=glow-ingress-line2",
+      "targets": [],
+      "value": "T2N 1N4"
+    }]
+  }, {
+    "id": "47827800-6f90-4ba0-a485-804e2b8ee677",
+    "name": "AddMultipleOfOneItemToCart",
+    "commands": [{
+      "id": "4860e408-34f4-43f7-bed6-cea6ea41e15b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79804dd0-f701-4364-8884-e8d4eb9331b6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Releases",
+      "targets": [
+        ["linkText=New Releases", "linkText"],
+        ["css=#nav-xshop > .nav-a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'New Releases')]", "xpath:link"],
+        ["xpath=//div[@id='nav-xshop']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/new-releases/?ref_=nav_cs_newreleases')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'New Releases')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2c912e5-80c4-4377-8ec9-24ab72c68be1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#B0BQZBPS4G .p13n-sc-truncate-desktop-type2",
+      "targets": [
+        ["css=#B0BQZBPS4G .p13n-sc-truncate-desktop-type2", "css:finder"],
+        ["xpath=//div[@id='B0BQZBPS4G']/a[2]/span/div", "xpath:idRelative"],
+        ["xpath=//a[2]/span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca0c4ca1-0d82-4262-aa8f-427b39966ba4",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantity",
+      "targets": [
+        ["id=quantity", "id"],
+        ["name=quantity", "name"],
+        ["css=#quantity", "css:finder"],
+        ["xpath=//select[@id='quantity']", "xpath:attributes"],
+        ["xpath=//div[@id='selectQuantity']/span/div/div/span/select", "xpath:idRelative"],
+        ["xpath=//span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17d535ae-da33-44fa-8d0b-cd873f3729c2",
+      "comment": "",
+      "command": "select",
+      "target": "id=quantity",
+      "targets": [],
+      "value": "label=3"
+    }, {
+      "id": "5fb4bc5d-fe2b-40dc-b33f-60735dd30bca",
+      "comment": "",
+      "command": "click",
+      "target": "css=#quantity > option:nth-child(3)",
+      "targets": [
+        ["css=#quantity > option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='3']", "xpath:attributes"],
+        ["xpath=//select[@id='quantity']/option[3]", "xpath:idRelative"],
+        ["xpath=//span/select/option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'3 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61d38feb-9bcb-454e-b8fa-ddab183516a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=#add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ee92f29-4505-43b5-b833-7c58a2e956d7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Go to cart",
+      "targets": [
+        ["linkText=Go to cart", "linkText"],
+        ["css=#sw-gtc .a-button-text", "css:finder"],
+        ["xpath=(//a[contains(text(),'Go to cart')])[2]", "xpath:link"],
+        ["xpath=//span[@id='sw-gtc']/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/cart/view.html?ref_=sw_gtc')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/span/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bc54cb2-7b3c-4b4c-94a3-c0131e0a61f0",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=sc-subtotal-label-buybox",
+      "targets": [],
+      "value": "Subtotal (3 items):"
+    }]
+  }, {
+    "id": "9301b218-9818-421d-943d-277036103f55",
+    "name": "RemoveFromCart",
+    "commands": [{
+      "id": "0eea7d48-cd47-4da9-bc0f-404c4f167d81",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe2d193b-89a9-485c-9c35-05a7faa93c5e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Releases",
+      "targets": [
+        ["linkText=New Releases", "linkText"],
+        ["css=#nav-xshop > .nav-a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'New Releases')]", "xpath:link"],
+        ["xpath=//div[@id='nav-xshop']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/new-releases/?ref_=nav_cs_newreleases')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'New Releases')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "924ef91e-7bba-4850-9974-e17be13eb2a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#B0BS1YJW28 .p13n-sc-truncate-desktop-type2",
+      "targets": [
+        ["css=#B0BS1YJW28 .p13n-sc-truncate-desktop-type2", "css:finder"],
+        ["xpath=//div[@id='B0BS1YJW28']/a[2]/span/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div[2]/div/div[2]/div/ol/li/div[2]/div/a[2]/span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f9b5b92-95c6-4391-b60d-21a64237542a",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=#add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf5d59db-8391-4f1c-9299-5e04e235d56f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Go to cart",
+      "targets": [
+        ["linkText=Go to cart", "linkText"],
+        ["css=#sw-gtc .a-button-text", "css:finder"],
+        ["xpath=(//a[contains(text(),'Go to cart')])[2]", "xpath:link"],
+        ["xpath=//span[@id='sw-gtc']/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/cart/view.html?ref_=sw_gtc')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/span/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc7c03df-e8f5-4b50-a33e-581524c633ef",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=sc-subtotal-label-buybox",
+      "targets": [],
+      "value": "Subtotal (1 item):"
+    }, {
+      "id": "ca12dfc8-a281-4259-9265-aa2eb0d911d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sc-action-delete .a-color-link",
+      "targets": [
+        ["name=submit.delete.C86ce8b56-7a83-4c5f-b4a9-324a2e681f65", "name"],
+        ["css=.sc-action-delete .a-color-link", "css:finder"],
+        ["xpath=//input[@name='submit.delete.C86ce8b56-7a83-4c5f-b4a9-324a2e681f65']", "xpath:attributes"],
+        ["xpath=//div[@id='sc-active-C86ce8b56-7a83-4c5f-b4a9-324a2e681f65']/div[4]/div/div[2]/div/span[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cc45fd5-490f-4f9d-b8c2-2f324ae819d0",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=sc-subtotal-label-activecart",
+      "targets": [],
+      "value": "Subtotal (0 items):"
+    }]
+  }, {
+    "id": "8f38ef1b-4fea-4b0c-ac9b-ef4ff8102a31",
+    "name": "LoginWithIncorrectCredentials",
+    "commands": [{
+      "id": "84a5767a-2d0a-412d-ae38-681464ff35e2",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29bfb34e-bc17-4edb-93d9-5f039f08d295",
+      "comment": "",
+      "command": "click",
+      "target": "css=#nav-signin-tooltip .nav-action-inner",
+      "targets": [
+        ["css=#nav-signin-tooltip .nav-action-inner", "css:finder"],
+        ["xpath=//div[@id='nav-signin-tooltip']/a/span", "xpath:idRelative"],
+        ["xpath=//div[13]/div[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dda22d7-fce8-400c-aff0-e454cb38370e",
+      "comment": "",
+      "command": "click",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31c443b2-b245-4ea1-9611-601c80b4ca59",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "calem810@gmail.com"
+    }, {
+      "id": "f6b42df7-574e-45dc-899a-4a5a9b8726db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-button-inner > #continue",
+      "targets": [
+        ["css=.a-button-inner > #continue", "css:finder"],
+        ["xpath=//input[@id='continue']", "xpath:attributes"],
+        ["xpath=//span[@id='continue']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d244b39a-a080-4958-931b-ce71795aed8f",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_password",
+      "targets": [
+        ["id=ap_password", "id"],
+        ["name=password", "name"],
+        ["css=#ap_password", "css:finder"],
+        ["xpath=//input[@id='ap_password']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "incorrect"
+    }, {
+      "id": "935fae28-22a8-49b5-a3b3-bb5296d4d353",
+      "comment": "",
+      "command": "click",
+      "target": "id=signInSubmit",
+      "targets": [
+        ["id=signInSubmit", "id"],
+        ["css=#signInSubmit", "css:finder"],
+        ["xpath=//input[@id='signInSubmit']", "xpath:attributes"],
+        ["xpath=//span[@id='auth-signin-button']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af671d90-6466-4ee9-8c03-712b5696e7f5",
+      "comment": "",
+      "command": "click",
+      "target": "id=authportal-main-section",
+      "targets": [
+        ["id=authportal-main-section", "id"],
+        ["css=#authportal-main-section", "css:finder"],
+        ["xpath=//div[@id='authportal-main-section']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-center-section']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ec5d8e0-420d-4f0a-b345-efdce0ab4eff",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.a-list-item",
+      "targets": [
+        ["css=.a-padding-medium", "css:finder"],
+        ["xpath=//div[@id='a-page']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": "Your password is incorrect"
+    }]
+  }, {
+    "id": "9f7638df-9e58-4dca-9ffc-5195ad5a20c8",
+    "name": "ChangeQuantityInCart",
+    "commands": [{
+      "id": "436006e4-e396-4b54-9861-dda6c8248b7a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29c2ffb1-e296-4833-928f-1f53e123790e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Releases",
+      "targets": [
+        ["linkText=New Releases", "linkText"],
+        ["css=#nav-xshop > .nav-a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'New Releases')]", "xpath:link"],
+        ["xpath=//div[@id='nav-xshop']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/new-releases/?ref_=nav_cs_newreleases')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'New Releases')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d85983ae-bf62-471f-b9b7-188d3e84ab6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#B0BRXN1L9X .p13n-sc-truncate-desktop-type2",
+      "targets": [
+        ["css=#B0BRXN1L9X .p13n-sc-truncate-desktop-type2", "css:finder"],
+        ["xpath=//div[@id='B0BRXN1L9X']/a[2]/span/div", "xpath:idRelative"],
+        ["xpath=//li[2]/div[2]/div/a[2]/span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14c2ace6-55e9-41b7-b833-d26cb2e44480",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=#add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0660f8ca-6696-446e-a524-55347aa602fb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Go to cart",
+      "targets": [
+        ["linkText=Go to cart", "linkText"],
+        ["css=#sw-gtc .a-button-text", "css:finder"],
+        ["xpath=(//a[contains(text(),'Go to cart')])[2]", "xpath:link"],
+        ["xpath=//span[@id='sw-gtc']/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/cart/view.html?ref_=sw_gtc')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/span/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a0a1640-f5aa-45a8-ab08-d399f5f9c2d1",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=sc-subtotal-label-buybox",
+      "targets": [],
+      "value": "Subtotal (1 item):"
+    }, {
+      "id": "7ee6b040-4173-474c-ba30-f4f95a477acb",
+      "comment": "",
+      "command": "click",
+      "target": "id=a-autoid-1-announce",
+      "targets": [
+        ["id=a-autoid-1-announce", "id"],
+        ["css=#a-autoid-1-announce", "css:finder"],
+        ["xpath=//span[@id='a-autoid-1-announce']", "xpath:attributes"],
+        ["xpath=//span[@id='a-autoid-1']/span/span", "xpath:idRelative"],
+        ["xpath=//span/span/span/span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54e700cb-41d8-40bf-b914-608436bed377",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantity_2",
+      "targets": [
+        ["id=quantity_2", "id"],
+        ["linkText=2", "linkText"],
+        ["css=#quantity_2", "css:finder"],
+        ["xpath=//a[contains(text(),'2')]", "xpath:link"],
+        ["xpath=//a[@id='quantity_2']", "xpath:attributes"],
+        ["xpath=//div[@id='a-popover-3']/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[7]", "xpath:href"],
+        ["xpath=//div[4]/div/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cdae550-34eb-4e7c-acf0-b2f6edf6c7ea",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=sc-subtotal-label-buybox",
+      "targets": [],
+      "value": "Subtotal (2 items):"
+    }]
+  }, {
+    "id": "787f0a03-fa1f-463c-bb00-ba60703a205b",
+    "name": "AddDifferentItemsToCart",
+    "commands": [{
+      "id": "89449e0d-ec82-4db6-8270-c10049159380",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79dd2d39-3969-4691-8c99-6ae7c390ecaa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Best Sellers",
+      "targets": [
+        ["linkText=Best Sellers", "linkText"],
+        ["css=#nav-xshop > .nav-a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Best Sellers')]", "xpath:link"],
+        ["xpath=//div[@id='nav-xshop']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Best-Sellers-generic/zgbs/?ref_=nav_cs_bestsellers')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Best Sellers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04d36be8-2f7d-4e55-9eac-da3afb6c7b09",
+      "comment": "",
+      "command": "click",
+      "target": "css=#B01LR5S6HK .p13n-sc-truncate-desktop-type2",
+      "targets": [
+        ["css=#B01LR5S6HK .p13n-sc-truncate-desktop-type2", "css:finder"],
+        ["xpath=//div[@id='B01LR5S6HK']/a[2]/span/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div[2]/div/div[2]/div/ol/li[2]/div[2]/div/a[2]/span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "469423bd-5948-4874-b445-2309835871c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=#add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e65bbff-6cd6-483b-a1c4-85196e63941d",
+      "comment": "",
+      "command": "click",
+      "target": "id=attach-close_sideSheet-link",
+      "targets": [
+        ["id=attach-close_sideSheet-link", "id"],
+        ["css=#attach-close_sideSheet-link", "css:finder"],
+        ["xpath=//a[@id='attach-close_sideSheet-link']", "xpath:attributes"],
+        ["xpath=//div[@id='attach-accessory-pane']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[74]", "xpath:href"],
+        ["xpath=//div[4]/div[3]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecfda175-ad15-4e58-a7b1-ddd211cdfec1",
+      "comment": "",
+      "command": "click",
+      "target": "id=native_dropdown_selected_style_name",
+      "targets": [
+        ["id=native_dropdown_selected_style_name", "id"],
+        ["name=dropdown_selected_style_name", "name"],
+        ["css=#native_dropdown_selected_style_name", "css:finder"],
+        ["xpath=//select[@id='native_dropdown_selected_style_name']", "xpath:attributes"],
+        ["xpath=//div[@id='variation_style_name']/span/span/select", "xpath:idRelative"],
+        ["xpath=//span/span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b568a99f-6fea-4e08-bfaf-f8b6528c19e0",
+      "comment": "",
+      "command": "select",
+      "target": "id=native_dropdown_selected_style_name",
+      "targets": [],
+      "value": "label=20-Pound, Set of 2"
+    }, {
+      "id": "a4ec20ae-3da5-4ea3-b9e0-3d216e249cfe",
+      "comment": "",
+      "command": "click",
+      "target": "id=native_style_name_5",
+      "targets": [
+        ["id=native_style_name_5", "id"],
+        ["css=#native_style_name_5", "css:finder"],
+        ["xpath=//option[@id='native_style_name_5']", "xpath:attributes"],
+        ["xpath=//select[@id='native_dropdown_selected_style_name']/option[6]", "xpath:idRelative"],
+        ["xpath=//span/span/select/option[6]", "xpath:position"],
+        ["xpath=//option[contains(.,' 20-Pound, Set of 2 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7060ca2-51a7-49de-ba7c-811f34de49bd",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=#add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09c6286e-9bb1-4b1a-bec7-c965e98eb283",
+      "comment": "",
+      "command": "click",
+      "target": "id=attach-close_sideSheet-link",
+      "targets": [
+        ["id=attach-close_sideSheet-link", "id"],
+        ["css=#attach-close_sideSheet-link", "css:finder"],
+        ["xpath=//a[@id='attach-close_sideSheet-link']", "xpath:attributes"],
+        ["xpath=//div[@id='attach-accessory-pane']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[53]", "xpath:href"],
+        ["xpath=//div[4]/div[3]/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75c6e249-5721-466d-961d-8e8d279fdfae",
+      "comment": "",
+      "command": "click",
+      "target": "id=native_dropdown_selected_style_name",
+      "targets": [
+        ["id=native_dropdown_selected_style_name", "id"],
+        ["name=dropdown_selected_style_name", "name"],
+        ["css=#native_dropdown_selected_style_name", "css:finder"],
+        ["xpath=//select[@id='native_dropdown_selected_style_name']", "xpath:attributes"],
+        ["xpath=//div[@id='variation_style_name']/span/span/select", "xpath:idRelative"],
+        ["xpath=//span/span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fffe1ec-494a-410d-bfe9-3ba4890f456f",
+      "comment": "",
+      "command": "select",
+      "target": "id=native_dropdown_selected_style_name",
+      "targets": [],
+      "value": "label=15-Pound, Set of 2"
+    }, {
+      "id": "16e691eb-d224-4c0f-a669-7a70e6607a7b",
+      "comment": "",
+      "command": "click",
+      "target": "id=native_style_name_3",
+      "targets": [
+        ["id=native_style_name_3", "id"],
+        ["css=#native_style_name_3", "css:finder"],
+        ["xpath=//option[@id='native_style_name_3']", "xpath:attributes"],
+        ["xpath=//select[@id='native_dropdown_selected_style_name']/option[4]", "xpath:idRelative"],
+        ["xpath=//span/span/select/option[4]", "xpath:position"],
+        ["xpath=//option[contains(.,' 15-Pound, Set of 2 ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5454fe9b-2fe4-4500-918e-c4cb4f6818fa",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=#add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a72d48d7-0777-42ff-930f-26fedc2db723",
+      "comment": "",
+      "command": "click",
+      "target": "css=#attach-sidesheet-view-cart-button .a-button-input",
+      "targets": [
+        ["css=#attach-sidesheet-view-cart-button .a-button-input", "css:finder"],
+        ["xpath=(//input[@type='submit'])[12]", "xpath:attributes"],
+        ["xpath=//span[@id='attach-sidesheet-view-cart-button']/span/input", "xpath:idRelative"],
+        ["xpath=//form/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12edd9db-6c13-4d0c-9632-facd1d84f86f",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=sc-subtotal-label-buybox",
+      "targets": [],
+      "value": "Subtotal (3 items):"
+    }]
+  }],
+  "suites": [{
+    "id": "a8f6a7a3-5963-4240-9d93-0af159e2fad2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://amazon.ca/"],
+  "plugins": []
+}

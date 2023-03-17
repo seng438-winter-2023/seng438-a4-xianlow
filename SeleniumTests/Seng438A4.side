@@ -1,0 +1,341 @@
+{
+  "id": "88793819-7a64-4684-a5fd-8737bcf297d4",
+  "version": "2.0",
+  "name": "Seng438A4",
+  "url": "https://www.amazon.ca/",
+  "tests": [{
+    "id": "0c295ed6-721c-4c5f-81b2-aa02c94ed130",
+    "name": "AddItemToCart",
+    "commands": [{
+      "id": "2a9f5d2d-be29-4203-9f91-fc67dcc5a885",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "740889fc-bd5d-4354-9d92-f8805cc911e3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x746",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "555dd881-1538-4f32-973e-cae9ec5e917f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Best Sellers",
+      "targets": [
+        ["linkText=Best Sellers", "linkText"],
+        ["css=#nav-xshop > .nav-a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Best Sellers')]", "xpath:link"],
+        ["xpath=//div[@id='nav-xshop']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Best-Sellers-generic/zgbs/?ref_=nav_cs_bestsellers')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Best Sellers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f72cc90e-4aff-46a6-a1e6-4c5e700847b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#B01LR5S6HK .p13n-sc-truncate-desktop-type2",
+      "targets": [
+        ["css=#B01LR5S6HK .p13n-sc-truncate-desktop-type2", "css:finder"],
+        ["xpath=//div[@id='B01LR5S6HK']/a[2]/span/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div[2]/div/div[2]/div/ol/li[2]/div[2]/div/a[2]/span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7de4c03f-1a80-4469-8302-e0ba87459650",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=#add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//div[12]/div/span/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5902f39d-b9a5-4f9f-a00c-de4c6219fb2d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=#add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//div[12]/div/span/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92d35d2a-8a52-4900-b026-95589e5028d9",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=.a-button-inner > #add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//div[12]/div/span/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "012ddb9d-daf9-426e-bf24-eb4af3643c66",
+      "comment": "",
+      "command": "click",
+      "target": "css=#attach-sidesheet-view-cart-button .a-button-input",
+      "targets": [
+        ["css=#attach-sidesheet-view-cart-button .a-button-input", "css:finder"],
+        ["xpath=(//input[@type='submit'])[13]", "xpath:attributes"],
+        ["xpath=//span[@id='attach-sidesheet-view-cart-button']/span/input", "xpath:idRelative"],
+        ["xpath=//form/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2c231d1-2755-431a-916c-073c59bd7ea2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "db3409f3-4139-405d-a322-221b4c1771fe",
+    "name": "SearchItem",
+    "commands": [{
+      "id": "4fcadf8c-91cb-4919-8f96-65d1422717d6",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f7ffee9-3e81-4851-b05c-4c154b3ea30f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x746",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "168fe58f-a24a-43d3-8e6f-eac0b4f02ef8",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "table"
+    }, {
+      "id": "e432ee36-bc24-437d-8473-e07e08fca265",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93314b0e-9683-4073-a5aa-73b74ea349b1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=icp-nav-flyout",
+      "targets": [
+        ["id=icp-nav-flyout", "id"],
+        ["linkText=EN", "linkText"],
+        ["css=#icp-nav-flyout", "css:finder"],
+        ["xpath=//a[@id='icp-nav-flyout']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-tools']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fs%3Fk%3Dtable%26crid%3D1VB68S5XSBP6J%26sprefix%3Dtable%252Caps%252C144%26ref%3Dnb_sb_noss_2&ref_=topnav_lang')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'EN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91a4ab44-41b5-43f5-a9ea-32f66428b78b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=icp-nav-flyout",
+      "targets": [
+        ["id=icp-nav-flyout", "id"],
+        ["linkText=EN", "linkText"],
+        ["css=#icp-nav-flyout", "css:finder"],
+        ["xpath=//a[@id='icp-nav-flyout']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-tools']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fs%3Fk%3Dtable%26crid%3D1VB68S5XSBP6J%26sprefix%3Dtable%252Caps%252C144%26ref%3Dnb_sb_noss_2&ref_=topnav_lang')]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'EN')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1f215fe-f70a-448b-826f-7a147407a23a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9ad469ad-5c4b-43c6-a6aa-f8d90da9b372",
+    "name": "ScrollAction",
+    "commands": [{
+      "id": "5b2d58f6-2205-40bb-a0b0-e64f877f720c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a10d72f7-2483-45e0-93b7-2b0b5e68a2fa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2060eb5a-53e0-4f35-afb9-110d0844df07",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,5524.20166015625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db8c381a-2e4e-4041-92e5-c0f31333e724",
+      "comment": "",
+      "command": "click",
+      "target": "css=#icp-touch-link-language > .icp-color-base",
+      "targets": [
+        ["css=#icp-touch-link-language > .icp-color-base", "css:finder"],
+        ["xpath=//a[@id='icp-touch-link-language']/span", "xpath:idRelative"],
+        ["xpath=//span[2]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dc661f6-804d-4fd2-bae4-51b6db2e0343",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=nav-link-accountList",
+      "targets": [
+        ["id=nav-link-accountList", "id"],
+        ["css=#nav-link-accountList", "css:finder"],
+        ["xpath=//a[@id='nav-link-accountList']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-tools']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.amazon.ca/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.ca%2Fcustomer-preferences%2Fedit%3Fie%3DUTF8%26preferencesReturnUrl%3D%252F%26ref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=caflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&')]", "xpath:href"],
+        ["xpath=//div[3]/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d604e6b5-8410-4399-a3ca-076347b69b64",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2086a3ca-66ec-41a4-9897-1d788e77bbbe",
+    "name": "AmazonBannerSwitch",
+    "commands": [{
+      "id": "a9353049-937a-4200-92cd-5ea38e41cee0",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a25cd3cb-20e9-47a1-81e8-d25865c08b4d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x695",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "472ba223-484e-4adb-a378-586302265213",
+      "comment": "",
+      "command": "click",
+      "target": "css=.celwidget > .a-carousel-goto-prevpage > .a-icon",
+      "targets": [
+        ["css=.celwidget > .a-carousel-goto-prevpage > .a-icon", "css:finder"],
+        ["xpath=//div[@id='gw-desktop-herotator']/div/div/div/div/a/i", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Previous slide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89f43f7c-976a-4300-84a8-fb89283960c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.celwidget > .a-carousel-goto-prevpage > .a-icon",
+      "targets": [
+        ["css=.celwidget > .a-carousel-goto-prevpage > .a-icon", "css:finder"],
+        ["xpath=//div[@id='gw-desktop-herotator']/div/div/div/div/a/i", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Previous slide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c178e451-0af9-4d8d-85f0-f8a0c0e35419",
+      "comment": "",
+      "command": "click",
+      "target": "css=.celwidget > .a-carousel-goto-prevpage > .a-icon",
+      "targets": [
+        ["css=.celwidget > .a-carousel-goto-prevpage > .a-icon", "css:finder"],
+        ["xpath=//div[@id='gw-desktop-herotator']/div/div/div/div/a/i", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Previous slide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "638d7a3a-aecd-4374-80d0-ba8273efdd2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.celwidget > .a-carousel-goto-prevpage > .a-icon",
+      "targets": [
+        ["css=.celwidget > .a-carousel-goto-prevpage > .a-icon", "css:finder"],
+        ["xpath=//div[@id='gw-desktop-herotator']/div/div/div/div/a/i", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Previous slide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee518776-642e-436e-9179-e1a8e8abff5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.celwidget > .a-carousel-goto-prevpage > .a-icon",
+      "targets": [
+        ["css=.celwidget > .a-carousel-goto-prevpage > .a-icon", "css:finder"],
+        ["xpath=//div[@id='gw-desktop-herotator']/div/div/div/div/a/i", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Previous slide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1d5c5542-20b1-43cb-bb4d-79c862a6fa24",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.amazon.ca/"],
+  "plugins": []
+}

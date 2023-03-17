@@ -646,7 +646,7 @@
       "id": "04d36be8-2f7d-4e55-9eac-da3afb6c7b09",
       "comment": "",
       "command": "click",
-      "target": "css=#B01LR5S6HK .p13n-sc-truncate-desktop-type2",
+      "target": "css=#B01LR5RO5U > a:nth-child(2)",
       "targets": [
         ["css=#B01LR5S6HK .p13n-sc-truncate-desktop-type2", "css:finder"],
         ["xpath=//div[@id='B01LR5S6HK']/a[2]/span/div", "xpath:idRelative"],
@@ -797,7 +797,7 @@
       "id": "a72d48d7-0777-42ff-930f-26fedc2db723",
       "comment": "",
       "command": "click",
-      "target": "css=#attach-sidesheet-view-cart-button .a-button-input",
+      "target": "css=#attach-sidesheet-view-cart-button > span:nth-child(1) > input:nth-child(1)",
       "targets": [
         ["css=#attach-sidesheet-view-cart-button .a-button-input", "css:finder"],
         ["xpath=(//input[@type='submit'])[12]", "xpath:attributes"],

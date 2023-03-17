@@ -61,46 +61,6 @@
       ],
       "value": ""
     }, {
-      "id": "5902f39d-b9a5-4f9f-a00c-de4c6219fb2d",
-      "comment": "",
-      "command": "mouseOver",
-      "target": "id=add-to-cart-button",
-      "targets": [
-        ["id=add-to-cart-button", "id"],
-        ["name=submit.add-to-cart", "name"],
-        ["css=#add-to-cart-button", "css:finder"],
-        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
-        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
-        ["xpath=//div[12]/div/span/span/span/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "92d35d2a-8a52-4900-b026-95589e5028d9",
-      "comment": "",
-      "command": "mouseOut",
-      "target": "id=add-to-cart-button",
-      "targets": [
-        ["id=add-to-cart-button", "id"],
-        ["name=submit.add-to-cart", "name"],
-        ["css=.a-button-inner > #add-to-cart-button", "css:finder"],
-        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
-        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
-        ["xpath=//div[12]/div/span/span/span/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "012ddb9d-daf9-426e-bf24-eb4af3643c66",
-      "comment": "",
-      "command": "click",
-      "target": "css=#attach-sidesheet-view-cart-button .a-button-input",
-      "targets": [
-        ["css=#attach-sidesheet-view-cart-button .a-button-input", "css:finder"],
-        ["xpath=(//input[@type='submit'])[13]", "xpath:attributes"],
-        ["xpath=//span[@id='attach-sidesheet-view-cart-button']/span/input", "xpath:idRelative"],
-        ["xpath=//form/span/span/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "e2c231d1-2755-431a-916c-073c59bd7ea2",
       "comment": "",
       "command": "close",
@@ -325,6 +285,134 @@
         ["xpath=//div/div/div/div/a/i", "xpath:position"],
         ["xpath=//i[contains(.,'Previous slide')]", "xpath:innerText"]
       ],
+      "value": ""
+    }, {
+      "id": "bccd014a-2e2b-417d-8c1c-87a329b44250",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8a44afbc-15cb-4d27-8a15-61fbb95def54",
+    "name": "AmazonBannerScrollRightSide",
+    "commands": [{
+      "id": "4ce7817f-54ee-4845-aee8-b2a95956ec3d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df34836c-7787-49d0-9e9c-2a6324f6f39b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1294x766",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "871f5e3c-df48-4048-8a1d-986a0e7fe434",
+      "comment": "",
+      "command": "click",
+      "target": "css=.celwidget > .a-carousel-goto-nextpage > .a-icon",
+      "targets": [
+        ["css=.celwidget > .a-carousel-goto-nextpage > .a-icon", "css:finder"],
+        ["xpath=//div[@id='gw-desktop-herotator']/div/div/div/div[3]/a/i", "xpath:idRelative"],
+        ["xpath=//div[3]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Next slide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fed581c1-8afb-49a9-9a24-1e5dbe3c2583",
+      "comment": "",
+      "command": "click",
+      "target": "css=.celwidget > .a-carousel-goto-nextpage > .a-icon",
+      "targets": [
+        ["css=.celwidget > .a-carousel-goto-nextpage > .a-icon", "css:finder"],
+        ["xpath=//div[@id='gw-desktop-herotator']/div/div/div/div[3]/a/i", "xpath:idRelative"],
+        ["xpath=//div[3]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Next slide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8236258-85a1-41d0-9676-c8c871862d68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.celwidget > .a-carousel-goto-nextpage > .a-icon",
+      "targets": [
+        ["css=.celwidget > .a-carousel-goto-nextpage > .a-icon", "css:finder"],
+        ["xpath=//div[@id='gw-desktop-herotator']/div/div/div/div[3]/a/i", "xpath:idRelative"],
+        ["xpath=//div[3]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Next slide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc8188dd-86d4-49a9-8d82-e6df6b3d5dee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.celwidget > .a-carousel-goto-nextpage > .a-icon",
+      "targets": [
+        ["css=.celwidget > .a-carousel-goto-nextpage > .a-icon", "css:finder"],
+        ["xpath=//div[@id='gw-desktop-herotator']/div/div/div/div[3]/a/i", "xpath:idRelative"],
+        ["xpath=//div[3]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Next slide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49650644-42b9-4c7b-9c08-6f0ad9013b47",
+      "comment": "",
+      "command": "click",
+      "target": "css=.celwidget > .a-carousel-goto-nextpage > .a-icon",
+      "targets": [
+        ["css=.celwidget > .a-carousel-goto-nextpage > .a-icon", "css:finder"],
+        ["xpath=//div[@id='gw-desktop-herotator']/div/div/div/div[3]/a/i", "xpath:idRelative"],
+        ["xpath=//div[3]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Next slide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b39c33d9-cc82-43df-a380-e0884510b0be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.celwidget > .a-carousel-goto-nextpage > .a-icon",
+      "targets": [
+        ["css=.celwidget > .a-carousel-goto-nextpage > .a-icon", "css:finder"],
+        ["xpath=//div[@id='gw-desktop-herotator']/div/div/div/div[3]/a/i", "xpath:idRelative"],
+        ["xpath=//div[3]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Next slide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62ae86df-bb24-488d-b85e-e6635d0c39d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.celwidget > .a-carousel-goto-nextpage > .a-icon",
+      "targets": [
+        ["css=.celwidget > .a-carousel-goto-nextpage > .a-icon", "css:finder"],
+        ["xpath=//div[@id='gw-desktop-herotator']/div/div/div/div[3]/a/i", "xpath:idRelative"],
+        ["xpath=//div[3]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Next slide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c44c9c20-539a-45c6-b1d7-3185d22e1139",
+      "comment": "",
+      "command": "click",
+      "target": "css=.celwidget > .a-carousel-goto-nextpage > .a-icon",
+      "targets": [
+        ["css=.celwidget > .a-carousel-goto-nextpage > .a-icon", "css:finder"],
+        ["xpath=//div[@id='gw-desktop-herotator']/div/div/div/div[3]/a/i", "xpath:idRelative"],
+        ["xpath=//div[3]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Next slide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "639a1cfb-38ee-416e-a348-7c09bc0088d5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
       "value": ""
     }]
   }],

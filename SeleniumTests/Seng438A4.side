@@ -113,37 +113,16 @@
       ],
       "value": ""
     }, {
-      "id": "93314b0e-9683-4073-a5aa-73b74ea349b1",
+      "id": "6eb2e70a-374b-46f2-848a-e241dadc603a",
       "comment": "",
-      "command": "mouseOver",
-      "target": "id=icp-nav-flyout",
+      "command": "assertText",
+      "target": "css=.a-color-state:nth-child(3)",
       "targets": [
-        ["id=icp-nav-flyout", "id"],
-        ["linkText=EN", "linkText"],
-        ["css=#icp-nav-flyout", "css:finder"],
-        ["xpath=//a[@id='icp-nav-flyout']", "xpath:attributes"],
-        ["xpath=//div[@id='nav-tools']/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fs%3Fk%3Dtable%26crid%3D1VB68S5XSBP6J%26sprefix%3Dtable%252Caps%252C144%26ref%3Dnb_sb_noss_2&ref_=topnav_lang')]", "xpath:href"],
-        ["xpath=//div[3]/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'EN')]", "xpath:innerText"]
+        ["css=.a-color-state:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='search']/span/div/h1/div/div/div/div/span[3]", "xpath:idRelative"],
+        ["xpath=//div/span[3]", "xpath:position"]
       ],
-      "value": ""
-    }, {
-      "id": "91a4ab44-41b5-43f5-a9ea-32f66428b78b",
-      "comment": "",
-      "command": "mouseOut",
-      "target": "id=icp-nav-flyout",
-      "targets": [
-        ["id=icp-nav-flyout", "id"],
-        ["linkText=EN", "linkText"],
-        ["css=#icp-nav-flyout", "css:finder"],
-        ["xpath=//a[@id='icp-nav-flyout']", "xpath:attributes"],
-        ["xpath=//div[@id='nav-tools']/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fs%3Fk%3Dtable%26crid%3D1VB68S5XSBP6J%26sprefix%3Dtable%252Caps%252C144%26ref%3Dnb_sb_noss_2&ref_=topnav_lang')]", "xpath:href"],
-        ["xpath=//div[3]/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'EN')]", "xpath:innerText"]
-      ],
-      "value": ""
+      "value": "\"table\""
     }, {
       "id": "f1f215fe-f70a-448b-826f-7a147407a23a",
       "comment": "",
@@ -409,6 +388,57 @@
       "value": ""
     }, {
       "id": "639a1cfb-38ee-416e-a348-7c09bc0088d5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "65a44b0e-25c7-4ef3-9e2f-4c88fd2fbaca",
+    "name": "SearchNothing",
+    "commands": [{
+      "id": "3a20628d-184b-4b19-90f4-906d2b666480",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6477fa20-d669-465c-8e28-211111d52a0c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x746",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7551e28-7ea5-4f02-b9a4-ceb550f9e7fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3019f230-5b7a-4ec7-a40e-45abb3d606fd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.celwidget > .a-carousel-goto-prevpage",
+      "targets": [
+        ["css=.celwidget > .a-carousel-goto-prevpage", "css:finder"],
+        ["xpath=//div[@id='gw-desktop-herotator']/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Previous slide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "259a445a-55cb-4132-94ff-253d76a6c4f3",
       "comment": "",
       "command": "close",
       "target": "",

@@ -4,71 +4,6 @@
   "name": "Seng438A4",
   "url": "https://www.amazon.ca/",
   "tests": [{
-    "id": "0c295ed6-721c-4c5f-81b2-aa02c94ed130",
-    "name": "AddItemToCart",
-    "commands": [{
-      "id": "2a9f5d2d-be29-4203-9f91-fc67dcc5a885",
-      "comment": "",
-      "command": "open",
-      "target": "https://www.amazon.ca/",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "740889fc-bd5d-4354-9d92-f8805cc911e3",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "974x746",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "555dd881-1538-4f32-973e-cae9ec5e917f",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Best Sellers",
-      "targets": [
-        ["linkText=Best Sellers", "linkText"],
-        ["css=#nav-xshop > .nav-a:nth-child(2)", "css:finder"],
-        ["xpath=//a[contains(text(),'Best Sellers')]", "xpath:link"],
-        ["xpath=//div[@id='nav-xshop']/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/Best-Sellers-generic/zgbs/?ref_=nav_cs_bestsellers')]", "xpath:href"],
-        ["xpath=//div[2]/div[2]/div/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Best Sellers')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "f72cc90e-4aff-46a6-a1e6-4c5e700847b9",
-      "comment": "",
-      "command": "click",
-      "target": "css=#B01LR5S6HK .p13n-sc-truncate-desktop-type2",
-      "targets": [
-        ["css=#B01LR5S6HK .p13n-sc-truncate-desktop-type2", "css:finder"],
-        ["xpath=//div[@id='B01LR5S6HK']/a[2]/span/div", "xpath:idRelative"],
-        ["xpath=//div[3]/div/div/div/div/div[2]/div/div[2]/div/ol/li[2]/div[2]/div/a[2]/span/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "7de4c03f-1a80-4469-8302-e0ba87459650",
-      "comment": "",
-      "command": "click",
-      "target": "id=add-to-cart-button",
-      "targets": [
-        ["id=add-to-cart-button", "id"],
-        ["name=submit.add-to-cart", "name"],
-        ["css=#add-to-cart-button", "css:finder"],
-        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
-        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
-        ["xpath=//div[12]/div/span/span/span/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "e2c231d1-2755-431a-916c-073c59bd7ea2",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
     "id": "db3409f3-4139-405d-a322-221b4c1771fe",
     "name": "SearchItem",
     "commands": [{
@@ -181,6 +116,20 @@
       ],
       "value": ""
     }, {
+      "id": "33547e5e-ee53-4240-9ff1-881e127b42ca",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=icp-language-heading",
+      "targets": [
+        ["id=icp-language-heading", "id"],
+        ["css=#icp-language-heading", "css:finder"],
+        ["xpath=//h3[@id='icp-language-heading']", "xpath:attributes"],
+        ["xpath=//div[@id='icp-language-headings']/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Language settings')]", "xpath:innerText"]
+      ],
+      "value": "Language settings"
+    }, {
       "id": "d604e6b5-8410-4399-a3ca-076347b69b64",
       "comment": "",
       "command": "close",
@@ -257,6 +206,18 @@
       "id": "ee518776-642e-436e-9179-e1a8e8abff5c",
       "comment": "",
       "command": "click",
+      "target": "css=.celwidget > .a-carousel-goto-prevpage > .a-icon",
+      "targets": [
+        ["css=.celwidget > .a-carousel-goto-prevpage > .a-icon", "css:finder"],
+        ["xpath=//div[@id='gw-desktop-herotator']/div/div/div/div/a/i", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Previous slide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39fcb6fc-317e-4944-a669-35cb3fa2486d",
+      "comment": "",
+      "command": "assertElementPresent",
       "target": "css=.celwidget > .a-carousel-goto-prevpage > .a-icon",
       "targets": [
         ["css=.celwidget > .a-carousel-goto-prevpage > .a-icon", "css:finder"],
@@ -378,6 +339,18 @@
       "id": "c44c9c20-539a-45c6-b1d7-3185d22e1139",
       "comment": "",
       "command": "click",
+      "target": "css=.celwidget > .a-carousel-goto-nextpage > .a-icon",
+      "targets": [
+        ["css=.celwidget > .a-carousel-goto-nextpage > .a-icon", "css:finder"],
+        ["xpath=//div[@id='gw-desktop-herotator']/div/div/div/div[3]/a/i", "xpath:idRelative"],
+        ["xpath=//div[3]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Next slide')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6882fc26-91d7-465b-8b5a-f00888434c79",
+      "comment": "",
+      "command": "assertElementPresent",
       "target": "css=.celwidget > .a-carousel-goto-nextpage > .a-icon",
       "targets": [
         ["css=.celwidget > .a-carousel-goto-nextpage > .a-icon", "css:finder"],
